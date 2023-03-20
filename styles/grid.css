@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.grid{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 75px;
+    display: grid;
+    grid-template-columns: 210px  300px 300px;
+    grid-template-rows: 40% 1fr;
+    grid-gap: 50px 40px;
+}
+.grid>aside>ul, .bio{
+    background-color: #F1EFFE;
+    border-radius: 23px;
+}
+.bio{
+    padding: 15px 25px;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+.grid>aside>ul{
+    padding-right: 70px;
+    padding-left: 30px;
+    font-size: 0.857em;
+}
+.left{
+    list-style-image: url('../images/Vector.svg');
+}
+.right{
+    list-style-image: url('../images/Vector1.svg');
+}
+.main>h1{
+    font-size: 1.14em;
+}
+.left>h1, .right>h1{
+    font-size: 1em;
+}
+.right>ul li, .left>ul li{
+    padding: 5px;
+}
+.bio>ul li{
+    display: inline;
+    color: #0C0D1F80;
+    padding-right: 25px;
+}
+.bio>ul li:not(:first-child){
+    padding-right: 25px;
+}
+.photo{
+    height: 325px;
+    background-size: cover;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.male{
+    background-image: url("../images/SehindeOmoriwo.png");
+}
+.female{
+    background-image: url("../images/OreoluwaOgunlaja.png");
+}
+.main{
+    grid-column-start: 2;
+    grid-column-end: span 2;
+}
